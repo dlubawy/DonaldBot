@@ -1,1 +1,1 @@
-web: gunicorn donaldbot.wsgi
+web: gunicorn donaldbot.wsgi --log-file -
