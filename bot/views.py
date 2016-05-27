@@ -9,5 +9,5 @@ def index(request):
     json_data = json.loads(request.body)
     text = json_data['text']
     name = '@TheDonald'
-    if(name.find(text) != -1):
+    if name in text:
         donald_tweets.main()
