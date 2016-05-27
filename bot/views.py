@@ -30,3 +30,5 @@ def index(request):
         donald_bot.send("An 'extremely credible source' has called my office and told me that %s's birth certificate is a fraud." % sender)
     if 'so hot' in text.lower() and 'thedonald' not in sender.lower():
         donald_bot.send("You know, it really doesn't matter what the media write as long as you've got a young, and beautiful, piece of ass.")
+    if 'great' in text.lower() and 'thedonald' not in sender.lower():
+        donald_bot.send_image("#MakeAmericaGreatAgain", "http://i.imgur.com/ocy1oCw.png")

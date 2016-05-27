@@ -30,3 +30,15 @@ def send(message):
     req = urllib2.Request('https://api.groupme.com/v3/bots/post')
     req.add_header('Content-Type', 'application/json')
     response = urllib2.urlopen(req, json.dumps(data))
+def send_image(text, url):
+    data = {
+            "bot_id": bot_id,
+            "text": text,
+            "attachments": {
+                "type": "image",
+                "url": url
+                }
+            }
+    req = urllib2.Request('https://api.groupme.com/v3/bots/post')
+    req.add_header('Content-Type', 'application/json')
+    response = urllib2.urlopen(req, json.dumps(data))
