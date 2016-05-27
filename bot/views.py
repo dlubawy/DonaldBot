@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+import json
 import imp
 donald_tweets = imp.load_source('donald_tweets', 'bot/donald_tweets.py')
 
+@csrf_exempt
 def index(request):
-    text = request.POST['text']
+    json_data = json.loads(request.body)
+    text = json_data['text']
     name = '@TheDonald'
-    if(name.find(text, beg=0, end=len(text)) != -1):
-        main()
+    if(name.find(text) != -1):
+        donald_tweets.main()
