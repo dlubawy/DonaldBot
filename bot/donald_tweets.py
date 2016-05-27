@@ -21,3 +21,12 @@ def main():
     req = urllib2.Request('https://api.groupme.com/v3/bots/post')
     req.add_header('Content-Type', 'application/json')
     response = urllib2.urlopen(req, json.dumps(data))
+
+def send(message):
+    data = {
+            "bot_id": bot_id,
+            "text": message
+            }
+    req = urllib2.Request('https://api.groupme.com/v3/bots/post')
+    req.add_header('Content-Type', 'application/json')
+    response = urllib2.urlopen(req, json.dumps(data))
