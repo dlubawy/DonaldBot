@@ -8,5 +8,5 @@ To have the bot send a random tweet from @realDonaldTrump use the command:
 `@TheDonald`
 With the command `@TheDonald how "A" is "B"?` the bot will return `"B" is 
 "random%" "A"`
-Any isntance of `wall` will return `I'll build it higher and make "USER" pay 
-for it.`
+Any isntance of `wall` will return `I'll build the wall higher and make "USER" 
+pay for it.`

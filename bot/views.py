@@ -25,4 +25,4 @@ def index(request):
         donald_bot.tweet()
 
     if 'wall' in text.lower():
-        donald_bot.send("I'll build it higher and make %s pay for it." % sender)
+        donald_bot.send("I'll build the wall higher and make %s pay for it." % sender)
