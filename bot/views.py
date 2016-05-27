@@ -25,4 +25,4 @@ def index(request):
         donald_bot.tweet()
 
     if 'wall' in text.lower() and 'thedonald' not in sender.lower():
-        donald_bot.send("I will build a great wall; and nobody builds walls better than me, believe me; and I’ll build them very inexpensively. I will build a great, great wall on our southern border, and I will make %s pay for that wall. Mark my words." % sender)
+        donald_bot.send("I will build a great wall - and nobody builds walls better than me, believe me - and I'll build them very inexpensively. I will build a great, great wall on our southern border, and I will make %s pay for that wall. Mark my words." % sender)
