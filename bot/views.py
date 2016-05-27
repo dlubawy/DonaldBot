@@ -31,4 +31,4 @@ def index(request):
     if 'so hot' in text.lower() and 'thedonald' not in sender.lower():
         donald_bot.send("You know, it really doesn't matter what the media write as long as you've got a young, and beautiful, piece of ass.")
     if 'great' in text.lower() and 'thedonald' not in sender.lower():
-        donald_bot.send_image("#MakeAmericaGreatAgain", "https://i.groupme.com/2000x1000.png.83f1d1064a4c4bdfb86fe37cbe38d783")
+        donald_bot.send_image("#MakeAmericaGreatAgain", "https://i.groupme.com/2000x1000.png.83f1d1064a4c4bdfb86fe37cbe38d783.large")
