@@ -11,7 +11,7 @@ api = twitter.Api(consumer_key=os.getenv('CONSUMER_KEY'),
 
 bot_id = os.getenv('BOT_ID')
 
-def main():
+def tweet():
     statuses = api.GetUserTimeline(screen_name='realDonaldTrump')
     rand = random.randint(0,20)
     data = {
